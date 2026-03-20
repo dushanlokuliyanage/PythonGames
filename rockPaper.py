@@ -17,7 +17,7 @@ while True:
     user_choise = input("Rock, Paper, or Scissors? (r/p/s): ").lower()
     if user_choise not in choises:
         print("Invalid Choise")
-
+        continue
     cumputerChoise = random.choice(choises)
 
     print(f"You chose {emojis[user_choise]}")
